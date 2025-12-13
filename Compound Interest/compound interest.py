@@ -21,13 +21,14 @@ def compound_interest():
             time = float(input("please enter how many years you have invested or plan to invest: "))
     
             total = principle * (1 + rate / n) ** (n * time) 
-
+            break
             print(f"\nYour total compound interest is: ${total:.2f} ")
 
         except ValueError:
             print("Please use a number, cannot use symbols 😊") 
 
 compound_interest()
+
 
 
 
